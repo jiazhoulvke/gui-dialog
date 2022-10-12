@@ -40,7 +40,7 @@ Usage of gui-dialog:
 gui-dialog -t msg --title=greeting --msg="你好，世界！"
 ```
 
-![msg info](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/assets/example_msg_info.png?sanitize=true&raw=true)
+![msg info](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/master/assets/example_msg_info.png?sanitize=true&raw=true)
 
 ### Error Message
 
@@ -48,7 +48,7 @@ gui-dialog -t msg --title=greeting --msg="你好，世界！"
 gui-dialog -t msg --message_dialog_type=error --title="Alert!" --msg="dangerous"
 ```
 
-![msg error](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/assets/example_msg_error.png?sanitize=true&raw=true)
+![msg error](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/master/assets/example_msg_error.png?sanitize=true&raw=true)
 
 ### Yes Or No
 
@@ -56,7 +56,7 @@ gui-dialog -t msg --message_dialog_type=error --title="Alert!" --msg="dangerous"
 gui-dialog -t msg --message_dialog_type=yes_or_no --msg="Are you ok?"
 ```
 
-![msg yes or no](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/assets/example_msg_yes_or_no.png?sanitize=true&raw=true)
+![msg yes or no](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/master/assets/example_msg_yes_or_no.png?sanitize=true&raw=true)
 
 console output:
 
@@ -80,7 +80,7 @@ console output:
 gui-dialog --start_file="C:\Windows\System32\help.exe" --filter_desc="programs" --filter="exe"
 ```
 
-![file](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/assets/example_file.png?sanitize=true&raw=true)
+![file](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/master/assets/example_file.png?sanitize=true&raw=true)
 
 console output:
 
@@ -100,4 +100,4 @@ if canceled, console output:
 gui-dialog -t dir --start_dir="C:\Windows\System32\"
 ```
 
-![dir](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/assets/example_directory.png?sanitize=true&raw=true)
+![dir](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/master/assets/example_directory.png?sanitize=true&raw=true)
