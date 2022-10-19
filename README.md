@@ -53,7 +53,7 @@ gui-dialog -t msg --title=greeting --msg="你好，世界！"
 ### Error Message
 
 ```
-gui-dialog -t msg --message_dialog_type=error --title="Alert!" --msg="dangerous" -o json
+gui-dialog -t msg --message_dialog_type=error --title="Alert!" --msg="dangerous"
 ```
 
 ![msg error](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/master/assets/example_msg_error.png?sanitize=true&raw=true)
