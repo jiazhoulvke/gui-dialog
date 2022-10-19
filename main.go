@@ -37,7 +37,7 @@ type Params struct {
 }
 
 func init() {
-	pflag.StringVarP(&params.OutputType, "output_type", "o", "json", "json,text")
+	pflag.StringVarP(&params.OutputType, "output_type", "o", "text", "json,text")
 	pflag.StringVarP(&params.DialogType, "type", "t", DialogTypeFile, "file,dir,msg")
 	pflag.StringVarP(&params.StartDir, "start_dir", "d", "", "start directory")
 	pflag.StringVarP(&params.StartFile, "start_file", "", "", "start file")

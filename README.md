@@ -25,7 +25,7 @@ Usage of gui-dialog:
       --filter_desc string           file filter description. example: pictures
       --message_dialog_type string   info,error,yes_or_no (default "info")
   -m, --msg string                   message info
-  -o, --output_type string           json,text (default "json")
+  -o, --output_type string           json,text (default "text")
   -d, --start_dir string             start directory
       --start_file string            start file
       --title string                 title
@@ -45,7 +45,7 @@ gui-dialog -t msg --title=greeting --msg="你好，世界！"
 ### Error Message
 
 ```
-gui-dialog -t msg --message_dialog_type=error --title="Alert!" --msg="dangerous"
+gui-dialog -t msg --message_dialog_type=error --title="Alert!" --msg="dangerous" -o json
 ```
 
 ![msg error](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/master/assets/example_msg_error.png?sanitize=true&raw=true)
@@ -53,7 +53,7 @@ gui-dialog -t msg --message_dialog_type=error --title="Alert!" --msg="dangerous"
 ### Yes Or No
 
 ```
-gui-dialog -t msg --message_dialog_type=yes_or_no --msg="Are you ok?"
+gui-dialog -t msg --message_dialog_type=yes_or_no --msg="Are you ok?" -o json
 ```
 
 ![msg yes or no](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/master/assets/example_msg_yes_or_no.png?sanitize=true&raw=true)
@@ -64,10 +64,8 @@ console output:
 { "value": true, "error": "" }
 ```
 
-if append "--output_type text"(default:json):
-
 ```
-gui-dialog -t msg --message_dialog_type=yes_or_no --msg="Are you ok?" --output_type text
+gui-dialog -t msg --message_dialog_type=yes_or_no --msg="Are you ok?" -o text
 ```
 
 console output:
@@ -77,7 +75,7 @@ console output:
 ## File
 
 ```
-gui-dialog --start_file="C:\Windows\System32\help.exe" --filter_desc="programs" --filter="exe"
+gui-dialog --start_file="C:\Windows\System32\help.exe" --filter_desc="programs" --filter="exe" -o json
 ```
 
 ![file](https://raw.githubusercontent.com/jiazhoulvke/gui-dialog/master/assets/example_file.png?sanitize=true&raw=true)
